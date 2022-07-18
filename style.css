@@ -1,0 +1,102 @@
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: rgb(230, 208, 181);
+    min-height: 100vh;
+    margin: 0;
+}
+.container{
+    background-color: white;
+    border-radius: 5px;
+    width: 700px;
+    max-width: 100%;
+}
+.header{
+    background-color: aqua;
+    padding: 20px 40px;
+    text-align: center;
+    border-bottom: 1px solid seashell;
+    font-size: 25px;
+}
+.header h2{
+    margin: 0;
+}
+.form{
+    padding: 30px 40px;
+  
+}
+.field{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.field label{
+    display:inline-block;
+    margin-bottom: 5px;
+    justify-content: space-between;
+}
+/*.mid{
+    align-items: center;
+}*/
+
+.field input{
+ display: inline-block;
+ border-radius:2px ;
+ border: 1px solid black;
+ font-size: 14px;
+ height: 100%;
+ padding-left: 10px;
+ padding:5px;
+ 
+}
+.field span{
+   visibility: hidden;
+}
+.field small{
+    visibility: hidden;
+ }
+ .field .box{
+    width:100%;
+    padding: 10px;
+ }
+.form .button{
+    background-color: blue;
+    border: 2px solid white;
+    color: white;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+
+}
+.field.sucess input{
+    border-color: #2ecc71;
+}
+.field.error input{
+    border-color: #e74c3c;
+}
+.field.sucess span.sucess{
+    color:#2ecc71;
+    visibility: visible;
+}
+.field.error span.error{
+    color:#e74c3c;
+    visibility: visible;
+}
+.field.error span.sucess{ 
+    visibility: none;
+}
+.field.sucess span.error{
+   visibility: none;
+}
+.field.error small{
+    visibility: visible;
+    color:#e74c3c
+}
